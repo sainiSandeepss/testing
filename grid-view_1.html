@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+   
+<html>
+<iframe src="http://www.aljazeera.com/news/2018/01/civilians-die-air-strikes-syria-eastern-ghouta-180104073942325.html" width="100%" height="100%"></iframe>
+
+<form name="bmiForm">
+Your Weight(kg): <input type="text" name="weight" size="10"><br />
+Your Height(cm): <input type="text" name="height" size="10"><br />
+<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+Your BMI: <input type="text" name="bmi" size="10"><br />
+This Means: <input type="text" name="meaning" size="25"><br />
+<input type="reset" value="Reset" />
+</form>
+
+<script language="JavaScript">
+<!--
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){	
+var finalBmi = weight/(height/100*height/100)
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = "That you are too thin."
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = "That you are healthy."
+}
+if(finalBmi > 25){
+document.bmiForm.meaning.value = "That you have overweight."
+}
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+//-->
+</script>
+
+
+
+<!--<p>
+http://www.aljazeera.com/news/2018/01/iranian-diplomat-charges-inciting-protests-180104081813194.html
+http://www.aljazeera.com/news/2018/01/civilians-die-air-strikes-syria-eastern-ghouta-180104073942325.html
+http://www.aljazeera.com/news/2018/01/equatorial-guinea-attempted-coup-thwarted-180104055905005.html
+http://www.aljazeera.com/indepth/features/syria-peace-2018-180103110604320.html
+http://www.aljazeera.com/news/2018/01/qa-fight-iran-ruling-factions-180104062518980.html
+http://www.aljazeera.com/blogs/middleeast/2018/01/master-artist-preserving-jerusalem-history-180103140004264.html
+http://www.aljazeera.com/indepth/opinion/top-10-ways-discredit-uprising-iran-180103074142068.html
+http://www.aljazeera.com/indepth/inpictures/nigerians-displaced-boko-haram-barter-survive-180103083420754.html
+http://www.aljazeera.com/news/2018/01/south-sudan-archivists-fear-loss-legacy-texts-180102110555354.html
+http://www.aljazeera.com/news/2018/01/lorde-target-bullying-dropping-israel-show-180103070659905.html
+https://arstechnica.com/cars/2018/01/bosch-buys-stake-in-aggregated-vehicle-mapping-company-here/
+https://arstechnica.com/gadgets/2018/01/new-white-and-rose-gold-dell-xps-13-laptop-features-8th-gen-intel-cpus/
+https://arstechnica.com/gadgets/2018/01/it-takes-17-hours-for-an-image-to-burn-in-on-the-iphone-x-test-shows/
+https://arstechnica.com/gadgets/2018/01/meltdown-and-spectre-every-modern-processor-has-unfixable-security-flaws/
+https://arstechnica.com/cars/2018/01/tesla-delivers-1550-model-3s-in-q4-says-it-wont-hit-5k-per-week-next-quarter/
+https://arstechnica.com/tech-policy/2018/01/foreign-imports-boom-as-solar-tariff-deadline-looms-itc-reaffirms-position/
+https://arstechnica.com/tech-policy/2018/01/att-sued-over-layoffs-after-promising-more-investment-because-of-tax-cut/
+https://arstechnica.com/science/2018/01/in-2017-the-us-led-the-world-in-launches-for-the-first-time-since-2003/
+https://arstechnica.com/gadgets/2018/01/imac-pro-teardown-reveals-what-you-can-upgrade-and-what-you-cant/
+https://arstechnica.com/science/2018/01/hotly-debated-3-5-billion-year-old-microbe-fossils-get-another-look/
+
+
+https://bitbucket.org/mkon-nds/albuzz
+
+
+// Albuzzer Api for ios
+
+http://staging.albuzzer.com/apis/v1/show-news?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&limit=10&country=in&top_trending=top_trending
+
+http://staging.albuzzer.com/apis/v1/show-news?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&limit=41&country=in&category=world-news&page=
+
+http://staging.albuzzer.com/apis/v1/albuzz-country?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&limit=10&lang=en_US
+
+http://staging.albuzzer.com/apis/v1/albuzz-category?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&country=in&limit=2&lang=en_US
+
+http://staging.albuzzer.com/apis/v1/news-detail?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&&news=last-rites-of-war-casualties-in-pulwama-nowshera-underway-32358
+
+
+http://staging.albuzzer.com/apis/v1/show-article?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&limit=2&country=in&category=fashion
+
+
+http://staging.albuzzer.com/apis/v1/article-detail?dc=ios&api_key=5e814d258c4b6f536a05221007477fd0&article=dsfsdg-434
+
+Nimbuzz Api for Ios
+
+
+1. Country List API:
+This API gives the list of countries with country iso code in which news are added in Nimbuzz.
+URL: http://nimbuzz.com/apis/v1/show-country
+Parameters: 
+dc=ios (Required)
+api_key=7716294c923fb3f6b10ecda238434e3a (Required)
+lang=en_US (Optional, Default value is en_US)
+limit=10 (Optional, Default value is 10 )
+Ex: http://nimbuzz.com/apis/v1/show-country?dc=ios&api_key=7716294c923fb3f6b10ecda238434e3a&lang=en_US&limit=10
+
+2. News Category List API
+This API give the list of news categories mapped with given country in Nimbuzz.
+URL: http://nimbuzz.com/apis/v1/nimbuzz-category
+Parameters: 
+dc=ios (Required)
+api_key=7716294c923fb3f6b10ecda238434e3a (Required)
+country=in (Required, value = ISO country code)
+lang=en_US (Optional, Default value is en_US)
+limit=10 (Optional, Default value is 10 )
+Ex: http://nimbuzz.com/apis/v1/nimbuzz-category?dc=ios&api_key=7716294c923fb3f6b10ecda238434e3a&country=in&limit=5&lang=en_US
+	 	 	 	
+3. News List API
+This API gives the list of news added in Nimbuzz. 
+URL: http://nimbuzz.com/apis/v1/show-news
+Parameters: 
+dc=ios (Required)
+api_key=7716294c923fb3f6b10ecda238434e3a (Required)
+country=in (Optional, value = ISO country code)
+newscategory=general (Optional, value =news category slug)
+lang=en_US (Optional, Default value is en_US)
+limit=10 (Optional, Default value is 10 )
+page=1 (Optional, Default 1)
+Ex: http://nimbuzz.com/apis/v1/show-news?dc=ios&api_key=7716294c923fb3f6b10ecda238434e3a&country=in&limit=5&lang=en_US
+
+4. Article List API
+This API gives the list of articles added in Nimbuzz. 
+URL: http://nimbuzz.com/apis/v1/show-article
+Parameters: 
+dc=ios (Required)
+api_key=7716294c923fb3f6b10ecda238434e3a (Required)
+country=in (Optional, value = ISO country code)
+newscategory=general (Optional, value =news category slug)
+lang=en_US (Optional, Default value is en_US)
+limit=10 (Optional, Default value is 10 )
+page=1 (Optional, Default 1)
+Ex: http://nimbuzz.com/apis/v1/show-article?dc=ios&api_key=7716294c923fb3f6b10ecda238434e3a&country=in&limit=5&lang=en_US
+
+5. News Detail API
+This API gives the details of the article which slug is passed in parameter. 
+URL: http://nimbuzz.com/apis/v1/news-detail
+Parameters: 
+dc=ios (Required)
+api_key=7716294c923fb3f6b10ecda238434e3a (Required)
+newsslug=slug-of-the-news(Required)
+lang=en_US (Optional, Default value is en_US)
+Ex: http://nimbuzz.com/apis/v1/news-detail?dc=ios&api_key=7716294c923fb3f6b10ecda238434e3a&newsslug=pm-modi-meets-newlywed-anushka-virat-114384-8562
+
+6. Article Detail API
+This API gives the details of the news which slug is passed in parameter. 
+URL: http://nimbuzz.com/apis/v1/article-detail
+Parameters: 
+dc=ios (Required)
+api_key=7716294c923fb3f6b10ecda238434e3a (Required)
+newsslug=slug-of-the-news(Required)
+lang=en_US (Optional, Default value is en_US)
+Ex: http://nimbuzz.com/apis/v1/article-detail?dc=ios&api_key=7716294c923fb3f6b10ecda238434e3a&articleslug=from-the-guy-who-didn-t-write-back-206
+
+
+
+albuzzer live
+
+
+
+http://albuzzer.com/apis/v1/show-news?dc=andriod&api_key=7eb49f4ca07d1bdab0021ef49045babb&limit=10&country=in&top_trending=top_trending
+
+
+
+</p>-->
+
+
+</html>
